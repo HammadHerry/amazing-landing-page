@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+    <div class="circle"></div>
+    <header>
+        <a href="#" ><img src="project pics/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home </a></li>
+             <li><a href="#">Menu</a></li>
+             <li><a href="#">What,s new </a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>It,s Not Just Watch <br>It,s <span>Rolex</span></h2>
+            <p>Rolex Is The World Most Demanding And Suitable Watch Forever And Ever</p>
+            <a href="#">Learn More</a>
+        </div>
+    <div class="imgbox">
+        <img src="project pics/master_peice-removebg-preview.png"  onclick="imgslider('project pics/master_peice-removebg-preview.png');changeCirclecolor('#c7ca22da')"class="Rolex">
+    </div>
+    </div>
+    <ul class="pictures">
+        <li><img src="project pics/pic1-removebg-preview.png" onclick="imgslider('project pics/pic1-removebg-preview.png');changeCirclecolor('#06159c')"></li>
+        <li><img src="project pics/pic2-removebg-preview.png" onclick="imgslider('project pics/pic2-removebg-preview.png');changeCirclecolor('#01110ade')""></li>
+        <li><img src="project pics/pic3-removebg-preview.png" onclick="imgslider('project pics/pic3-removebg-preview.png');changeCirclecolor('#017143')""></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="project pics/fb-removebg-preview.png"></a></li>
+        <li><a href="#"><img src="project pics/twitter-removebg-preview.png"></a></li>
+        <li><a href="#"><img src="project pics/insta-removebg-preview.png"></a></li>
+    </ul>
+</section>
+
+<!-- Image display area -->
+
+<script type="text/javascript">
+    function imgslider(anything){
+        document.querySelector('.Rolex').src = anything;
+    }
+   function changeCirclecolor(color){
+    const circle =document.querySelector('.circle');
+    circle.style.background = color;
+   } 
+</script>
+</body>
+</html>
